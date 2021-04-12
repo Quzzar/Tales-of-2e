@@ -1,0 +1,29 @@
+.talespireLink {
+  background-color: hsl(0, 0%, 21%)!important;
+  color:hsl(0, 0%, 79%)!important;
+
+  border-color: hsl(0, 0%, 13%);
+  padding-bottom:  0.1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.1em;
+  text-align: center;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+
+  user-select: none;
+
+  text-decoration: none;
+  cursor: pointer !important;
+
+}
+
+.talespireLink:hover {
+
+  background-color: hsl(0, 0%, 19%)!important;
+  color:hsl(0, 0%, 79%)!important;
+  border-color: hsl(0, 0%, 10%);
+
+}

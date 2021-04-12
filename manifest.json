@@ -1,0 +1,58 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 3,
+    "name": "Tales of 2e",
+    "description": "Provides TaleSpire dice roller integration for many popular Pathfinder 2e resources.",
+    "version": "0.4.9",
+    "icons": {
+      "128": "icon_128.png",
+      "48": "icon_48.png",
+      "16": "icon_16.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://wanderersguide.app/*"
+        ],
+        "js": [
+          "jquery-3.4.0.min.js",
+          "scripts/utils.js",
+          "scripts/wg.js"
+        ],
+        "css": [
+          "content.css"
+        ],
+        "run_at": "document_end"
+      },
+      {
+        "matches": [
+          "https://2e.aonprd.com/*"
+        ],
+        "js": [
+          "jquery-3.4.0.min.js",
+          "scripts/utils.js",
+          "scripts/aon.js"
+        ],
+        "css": [
+          "content.css"
+        ],
+        "run_at": "document_end"
+      },
+      {
+        "matches": [
+          "https://pf2.easytool.es/*",
+          "http://www.pf2.easytool.es/*"
+        ],
+        "js": [
+          "jquery-3.4.0.min.js",
+          "scripts/utils.js",
+          "scripts/easytools.js"
+        ],
+        "css": [
+          "content.css"
+        ],
+        "run_at": "document_end"
+      }
+    ]
+}
