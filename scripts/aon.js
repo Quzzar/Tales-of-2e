@@ -21,7 +21,7 @@ function processGeneralText(){
     let textHTML = $(this).html();
 
     textHTML = textHTML.replace(REGEX_BONUS, function(match, startSpace, label, bonus, sign, endSpace) {
-      return startSpace+linkGenerator(match.substring(startSpace.length), true, label+' '+bonus, label)+endSpace;
+      return startSpace+linkGenerator(bonus.trim(), true, label+' '+bonus, label)+endSpace;
     });
 
     textHTML = textHTML.replace(REGEX_DAMAGE, function(match, startSpace, diceText, diceNum, diceType, bonus, bonusLast, afterWord, afterWordOnly, endSpace) {
